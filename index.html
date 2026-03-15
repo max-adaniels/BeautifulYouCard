@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful You PE</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="card-container">
+
+<div class="profile-section">
+<div class="profile-header">
+<img src="Header.png" alt="Beautiful You Header" class="header-image">
+</div>
+
+<div class="about-section">
+<h2>Beautiful You</h2>
+<p class="role">Premium Beauty Salon</p>
+<p class="bio">Beautiful You provides premium beauty and skincare services in Walmer, Gqeberha. We specialize in professional facials, massages, and nail care. We tailor every treatment to your specific needs to ensure you receive excellent care.</p>
+</div>
+</div>
+
+<div class="links-section">
+<div class="services-dropdown">
+<details>
+<summary><i class="fas fa-list-ul"></i> Our Services & Prices</summary>
+<div class="dropdown-content">
+<div class="price-item"><span>Standard Facial</span><span>R450</span></div>
+<div class="price-item"><span>Deep Tissue Massage</span><span>R550</span></div>
+<div class="price-item"><span>Classic Manicure</span><span>R250</span></div>
+<div class="price-item"><span>Spa Pedicure</span><span>R300</span></div>
+</div>
+</details>
+</div>
+
+<br>
+
+<div class="quick-actions">
+<a target="_blank" href="tel:+27415810444" class="action-btn"><i class="fas fa-phone"></i>Phone: (041) 581 0444</a>
+<a target="_blank" href="mailto:info@beautifulyoupe.co.za" class="action-btn"><i class="fas fa-envelope"></i>Email: info@beautifulyoupe.co.za</a>
+<a target="_blank" href="https://wa.me/27609555518" class="action-btn"><i class="fab fa-whatsapp"></i>WhatsApp: (083) 655 5526</a>
+<a target="_blank" href="https://maps.app.goo.gl/9rSqsvfUBqepPK3T9" class="action-btn"><i class="fas fa-map-marker-alt"></i>Location: 141 Heugh Road Walmer</a>
+<a target="_blank" href="https://www.beautifulyou.co.za/" class="action-btn"><i class="fas fa-globe"></i> Visit Website</a>
+</div>
+
+<div class="social-row">
+<a target="_blank" href="https://www.instagram.com/beautifulyoupe/" class="social-icon"><i class="fab fa-instagram"></i></a>
+<a target="_blank" href="https://www.facebook.com/beautifulyouPE/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+</div>
+
+<div class="bottom-actions">
+<a href="contact.vcf" download="BeautifulYou.vcf" class="primary-btn"><i class="fas fa-address-book"></i> Save Contact</a>
+<button onclick="shareCard()" class="secondary-btn"><i class="fas fa-share-nodes"></i> Share</button>
+</div>
+</div>
+
+</div>
+
+<script>
+function shareCard() {
+if (navigator.share) {
+navigator.share({
+title: 'Beautiful You PE',
+text: 'Book your premium beauty services in Gqeberha',
+url: window.location.href
+})
+}
+}
+</script>
+
+</body>
+</html>
